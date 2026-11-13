@@ -1,0 +1,50 @@
+{
+  // ---------- Editor basics ----------
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.renderLineHighlight": "all",
+  "editor.lineHeight": 1.5,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // ---------- ESLint ----------
+  "eslint.useFlatConfig": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // ---------- Prettier ----------
+  "prettier.requireConfig": true,
+
+  // ---------- Tailwind CSS v4 ----------
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.classAttributes": ["class", "className"],
+  "tailwindCSS.experimental.classRegex": [
+    ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["clsx\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+
+  // ---------- Prisma ----------
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+
+  // ---------- TypeScript (New Keys) ----------
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+  "js/ts.preferences.importModuleSpecifier": "non-relative",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+
+  // ---------- GitLens ----------
+  "gitlens.views.formats.commits.tooltip": "",
+
+  // ---------- Theme (dark) ----------
+  "workbench.colorTheme": "Islands Dark"
+}
